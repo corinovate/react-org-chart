@@ -1,5 +1,5 @@
 {
-  "name": "core-innovate-tree-example-native",
+  "name": "corinovate-react-org-chart-example-native",
   "private": true,
   "version": "0.0.0",
   "main": "node_modules/expo/AppEntry.js",
@@ -7,7 +7,7 @@
     "start": "expo start"
   },
   "dependencies": {
-    "core-innovate-tree": "file:..",
+    "corinovate-react-org-chart": "file:..",
     "expo": "~51.0.0",
     "expo-print": "~13.0.1",
     "react": "18.2.0",

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { OrgChart } from 'core-innovate-tree/react';
-import { flattenTree } from 'core-innovate-tree';
-import type { NestedEmployee, OrgChartData } from 'core-innovate-tree';
+import { OrgChart } from 'corinovate-react-org-chart/react';
+import { flattenTree } from 'corinovate-react-org-chart';
+import type { NestedEmployee, OrgChartData } from 'corinovate-react-org-chart';
 
 type LoadState =
   | { status: 'loading' }

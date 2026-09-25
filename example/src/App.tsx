@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { OrgChart } from 'core-innovate-tree/react';
-import type { OrgChartData } from 'core-innovate-tree';
+import { OrgChart } from 'corinovate-react-org-chart/react';
+import type { OrgChartData } from 'corinovate-react-org-chart';
 
 const PURPLE = '#7c5cff'; // Engineering
 const TEAL = '#0d9488'; // Finance
@@ -8,9 +8,9 @@ const ORANGE = '#f97316'; // Sales
 
 const initialData: OrgChartData = {
   people: [
-    { id: 'alice', name: 'Alice Kim', title: 'CEO', department: 'Leadership', icon: '👥', color: PURPLE, status: 'Active', customFields: { email: 'alice@company.com', employeeId: 'EMP-00001' } },
+    { id: 'alice', name: 'Alice Kim', title: 'CEO', department: 'Leadership', icon: '👥', color: PURPLE, status: 'Active', photoUrl: 'https://i.pravatar.cc/150?img=47', customFields: { email: 'alice@company.com', employeeId: 'EMP-00001' } },
 
-    { id: 'bob', name: 'Bob Diaz', title: 'CTO', department: 'Technology', icon: '💻', managerId: 'alice', color: PURPLE, status: 'Active', customFields: { email: 'bob@company.com', employeeId: 'EMP-00012' } },
+    { id: 'bob', name: 'Bob Diaz', title: 'CTO', department: 'Technology', icon: '💻', managerId: 'alice', color: PURPLE, status: 'Active', photoUrl: 'https://i.pravatar.cc/150?img=12', customFields: { email: 'bob@company.com', employeeId: 'EMP-00012' } },
     { id: 'carla', name: 'Carla Ng', title: 'CFO', department: 'Finance', icon: '📊', managerId: 'alice', color: TEAL, status: 'Active', customFields: { email: 'carla@company.com', employeeId: 'EMP-00013' } },
     { id: 'derek', name: 'Derek Osei', title: 'VP Sales', department: 'Sales', icon: '📈', managerId: 'alice', color: ORANGE, status: 'Active', customFields: { email: 'derek@company.com', employeeId: 'EMP-00014' } },
 

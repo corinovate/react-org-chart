@@ -1,9 +1,9 @@
 {
-  "name": "core-innovate-tree",
+  "name": "corinovate-react-org-chart",
   "version": "0.1.0",
-  "description": "A premium, JSON-driven org chart component for React and React Native — pan/zoom, an editable data model, per-branch colors, and a printable details drawer.",
+  "description": "A premium, JSON-driven org chart component for React and React Native, by Corinovate — pan/zoom, an editable data model, per-branch colors, and a printable details drawer.",
   "license": "MIT",
-  "author": "Corinnovate",
+  "author": "Corinovate",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corinovate/react-org-chart.git"
@@ -97,6 +97,7 @@
     "vitest": "^2.0.5"
   },
   "keywords": [
+    "corinovate",
     "org-chart",
     "org chart react",
     "organization-chart",

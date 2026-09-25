@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { OrgChart } from 'core-innovate-tree/native';
-import type { OrgChartData } from 'core-innovate-tree';
+import { OrgChart } from 'corinovate-react-org-chart/native';
+import type { OrgChartData } from 'corinovate-react-org-chart';
 
 const PURPLE = '#7c5cff';
 const TEAL = '#0d9488';

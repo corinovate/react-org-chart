@@ -1,16 +1,16 @@
-# core-innovate-tree — React Org Chart Component
+# Corinovate React Org Chart
 
-[![npm version](https://img.shields.io/npm/v/core-innovate-tree.svg)](https://www.npmjs.com/package/core-innovate-tree)
-[![license](https://img.shields.io/npm/l/core-innovate-tree.svg)](./LICENSE)
-[![types](https://img.shields.io/npm/types/core-innovate-tree.svg)](./src/core/types.ts)
+[![npm version](https://img.shields.io/npm/v/corinovate-react-org-chart.svg)](https://www.npmjs.com/package/corinovate-react-org-chart)
+[![license](https://img.shields.io/npm/l/corinovate-react-org-chart.svg)](./LICENSE)
+[![types](https://img.shields.io/npm/types/corinovate-react-org-chart.svg)](./src/core/types.ts)
 
-A premium, JSON-driven **org chart** / **organization chart** component for **React** and **React Native** — pan/zoom navigation, a fully editable data model, per-branch colors and icons, and a printable details drawer. Use it to visualize company hierarchy, team structure, reporting lines, or an employee directory from your own data — no design work required.
+A premium, JSON-driven **org chart** / **organization chart** component for **React** and **React Native**, built by [Corinovate](https://github.com/corinovate) — pan/zoom navigation, a fully editable data model, per-branch colors and icons, and a printable details drawer. Use it to visualize company hierarchy, team structure, reporting lines, or an employee directory from your own data — no design work required.
 
 ```bash
-npm install core-innovate-tree
+npm install corinovate-react-org-chart
 ```
 
-![A React org chart rendered by core-innovate-tree, showing a company hierarchy with colored branches per department](./docs/screenshot.png)
+![A React org chart rendered by corinovate-react-org-chart, showing a company hierarchy with colored branches per department](./docs/screenshot.png)
 
 ![The org chart's details drawer open for a selected employee, showing their title, department, reports-to chain, and edit actions](./docs/screenshot-drawer.png)
 
@@ -18,7 +18,7 @@ npm install core-innovate-tree
 
 ## Why this one
 
-- **One package, two renderers.** `core-innovate-tree` (data model + layout engine), `core-innovate-tree/react` (web), `core-innovate-tree/native` (React Native) — the same JSON data model and mutation functions drive both.
+- **One package, two renderers.** `corinovate-react-org-chart` (data model + layout engine), `corinovate-react-org-chart/react` (web), `corinovate-react-org-chart/native` (React Native) — the same JSON data model and mutation functions drive both.
 - **You own the data.** `OrgChart` is a controlled component — you hold the JSON, the widget just renders it and reports changes. Feed it a static constant, a REST/GraphQL API, React Query, Redux — see [Where does data come from?](#where-does-data-come-from).
 - **Real editing, not just display.** Add or remove people, set managers, recolor a branch, or drive the same pure functions headlessly from your own UI.
 - **Looks designed, not default.** Per-person color and department icon, a tinted connector per branch, and a polished details drawer — out of the box, without hand-rolled CSS.
@@ -28,8 +28,8 @@ npm install core-innovate-tree
 
 ```tsx
 import { useState } from 'react';
-import { OrgChart } from 'core-innovate-tree/react';
-import type { OrgChartData } from 'core-innovate-tree';
+import { OrgChart } from 'corinovate-react-org-chart/react';
+import type { OrgChartData } from 'corinovate-react-org-chart';
 
 const initialData: OrgChartData = {
   people: [
@@ -53,7 +53,7 @@ function App() {
 
 ```tsx
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { OrgChart } from 'core-innovate-tree/native';
+import { OrgChart } from 'corinovate-react-org-chart/native';
 
 export default function App() {
   return (
@@ -101,8 +101,8 @@ The one thing worth calling out: most real org-chart APIs don't return this flat
 
 ```ts
 import { useEffect, useState } from 'react';
-import { flattenTree } from 'core-innovate-tree';
-import type { OrgChartData } from 'core-innovate-tree';
+import { flattenTree } from 'corinovate-react-org-chart';
+import type { OrgChartData } from 'corinovate-react-org-chart';
 
 function useOrgChartFromApi(url: string) {
   const [data, setData] = useState<OrgChartData | null>(null);
@@ -171,7 +171,7 @@ The drawer also shows a "Reports To" row automatically (the selected person's ma
 Every mutation is a plain, immutable function in the core package — use them directly if you're building your own UI, or via the `useOrgChart` headless hook:
 
 ```ts
-import { addPerson, removePerson, updatePerson, addRelationship, removeRelationship } from 'core-innovate-tree';
+import { addPerson, removePerson, updatePerson, addRelationship, removeRelationship } from 'corinovate-react-org-chart';
 // or: const { data, addPerson, removePerson, updatePerson, addRelationship, removeRelationship } = useOrgChart(initialData);
 ```
 
@@ -209,6 +209,6 @@ Before publishing, verify the package actually resolves for a real installer (no
 npm run build
 npm pack --pack-destination /tmp
 mkdir /tmp/pack-test && cd /tmp/pack-test && npm init -y
-npm install /tmp/core-innovate-tree-*.tgz react react-dom
-node -e "import('core-innovate-tree/react').then(m => console.log('OrgChart' in m))"
+npm install /tmp/corinovate-react-org-chart-*.tgz react react-dom
+node -e "import('corinovate-react-org-chart/react').then(m => console.log('OrgChart' in m))"
 ```

@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/corinovate-react-org-chart.svg)](./LICENSE)
 [![types](https://img.shields.io/npm/types/corinovate-react-org-chart.svg)](./src/core/types.ts)
 
-A premium, JSON-driven **org chart** / **organization chart** component for **React** and **React Native**, built by [Corinovate](https://github.com/corinovate) — pan/zoom navigation, a fully editable data model, per-branch colors and icons, and a printable details drawer. Use it to visualize company hierarchy, team structure, reporting lines, or an employee directory from your own data — no design work required.
+A premium, JSON-driven **org chart** / **organization chart** / **genealogy tree** component for **React** and **React Native**, built by [Corinovate](https://corinovate.com) — pan/zoom navigation, a fully editable data model, per-branch colors and icons, and a printable details drawer. Use it to visualize company hierarchy, team structure, reporting lines, an employee directory, or an **MLM / network marketing downline (sponsor) tree** — from your own data, no design work required.
 
 ```bash
 npm install corinovate-react-org-chart
@@ -13,6 +13,8 @@ npm install corinovate-react-org-chart
 ![A React org chart rendered by corinovate-react-org-chart, showing a company hierarchy with colored branches per department](./docs/screenshot.png)
 
 ![The org chart's details drawer open for a selected employee, showing their title, department, reports-to chain, and edit actions](./docs/screenshot-drawer.png)
+
+Built by **[Corinovate](https://corinovate.com)**. Looking for a full MLM back office instead of just the tree component? See **[Core MLM Software](https://www.coremlmsoftware.com)**.
 
 **Contents:** [Quick start](#quick-start-web) · [Data model](#data-model) · [Where does data come from?](#where-does-data-come-from) · [Props](#orgchart-props) · [Editing](#editing-without-any-ui) · [Printing](#printing) · [Development](#development)
 
@@ -23,6 +25,7 @@ npm install corinovate-react-org-chart
 - **Real editing, not just display.** Add or remove people, set managers, recolor a branch, or drive the same pure functions headlessly from your own UI.
 - **Looks designed, not default.** Per-person color and department icon, a tinted connector per branch, and a polished details drawer — out of the box, without hand-rolled CSS.
 - **Click or hover a person** to open a right-side drawer with their details and a Print button.
+- **Works as an org chart *or* an MLM genealogy tree.** Each person has one manager and any number of direct reports — that's a company reporting line, or a network-marketing sponsor and their downline, depending on the labels you put on it. Nothing in the data model is genealogy- or org-chart-specific.
 
 ## Quick start (web)
 
@@ -212,3 +215,7 @@ mkdir /tmp/pack-test && cd /tmp/pack-test && npm init -y
 npm install /tmp/corinovate-react-org-chart-*.tgz react react-dom
 node -e "import('corinovate-react-org-chart/react').then(m => console.log('OrgChart' in m))"
 ```
+
+## About
+
+Built and maintained by **[Corinovate](https://corinovate.com)**. If you're building an MLM / network-marketing platform and need more than a tree component — commissions, replicated sites, a full back office — check out our product **[Core MLM Software](https://www.coremlmsoftware.com)**.

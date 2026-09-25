@@ -1,9 +1,12 @@
 {
   "name": "corinovate-react-org-chart",
-  "version": "0.1.0",
-  "description": "A premium, JSON-driven org chart component for React and React Native, by Corinovate — pan/zoom, an editable data model, per-branch colors, and a printable details drawer.",
+  "version": "0.1.1",
+  "description": "A premium, JSON-driven org chart / genealogy tree component for React and React Native, by Corinovate — pan/zoom, an editable data model, per-branch colors, and a printable details drawer. Great for company org charts and MLM / network marketing downline (sponsor) trees.",
   "license": "MIT",
-  "author": "Corinovate",
+  "author": {
+    "name": "Corinovate",
+    "url": "https://corinovate.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corinovate/react-org-chart.git"
@@ -104,6 +107,16 @@
     "organizational-chart",
     "react org chart",
     "react-native org chart",
+    "genealogy tree",
+    "genealogy-tree",
+    "family tree",
+    "mlm",
+    "mlm software",
+    "mlm genealogy tree",
+    "network marketing",
+    "downline",
+    "downline tree",
+    "sponsor tree",
     "company hierarchy",
     "employee directory",
     "team structure",

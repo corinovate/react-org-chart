@@ -1,0 +1,66 @@
+{
+  "id": "alice",
+  "name": "Alice Kim",
+  "title": "CEO",
+  "department": "Leadership",
+  "icon": "👥",
+  "color": "#7c5cff",
+  "children": [
+    {
+      "id": "bob",
+      "name": "Bob Diaz",
+      "title": "CTO",
+      "department": "Technology",
+      "icon": "💻",
+      "color": "#7c5cff",
+      "children": [
+        {
+          "id": "ellen",
+          "name": "Ellen Vance",
+          "title": "Eng Manager",
+          "department": "Engineering",
+          "icon": "💻",
+          "color": "#7c5cff",
+          "children": [
+            { "id": "grace", "name": "Grace Lin", "title": "Senior Engineer", "department": "Engineering", "icon": "💻", "color": "#7c5cff" },
+            { "id": "hassan", "name": "Hassan Ali", "title": "Engineer", "department": "Engineering", "icon": "💻", "color": "#7c5cff" }
+          ]
+        },
+        {
+          "id": "farid",
+          "name": "Farid Haidari",
+          "title": "Eng Manager",
+          "department": "Engineering",
+          "icon": "💻",
+          "color": "#7c5cff",
+          "children": [
+            { "id": "ivy", "name": "Ivy Torres", "title": "Senior Engineer", "department": "Engineering", "icon": "💻", "color": "#7c5cff" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carla",
+      "name": "Carla Ng",
+      "title": "CFO",
+      "department": "Finance",
+      "icon": "📊",
+      "color": "#0d9488",
+      "children": [
+        { "id": "jack", "name": "Jack Nolan", "title": "Controller", "department": "Finance", "icon": "📊", "color": "#0d9488" }
+      ]
+    },
+    {
+      "id": "derek",
+      "name": "Derek Osei",
+      "title": "VP Sales",
+      "department": "Sales",
+      "icon": "📈",
+      "color": "#f97316",
+      "children": [
+        { "id": "kara", "name": "Kara Singh", "title": "Account Executive", "department": "Sales", "icon": "📈", "color": "#f97316" },
+        { "id": "leo", "name": "Leo Fischer", "title": "Account Executive", "department": "Sales", "icon": "📈", "color": "#f97316" }
+      ]
+    }
+  ]
+}

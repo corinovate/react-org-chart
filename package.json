@@ -1,0 +1,118 @@
+{
+  "name": "core-innovate-tree",
+  "version": "0.1.0",
+  "description": "A premium, JSON-driven org chart component for React and React Native — pan/zoom, an editable data model, per-branch colors, and a printable details drawer.",
+  "license": "MIT",
+  "author": "Corinnovate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corinovate/react-org-chart.git"
+  },
+  "homepage": "https://github.com/corinovate/react-org-chart#readme",
+  "bugs": {
+    "url": "https://github.com/corinovate/react-org-chart/issues"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "react",
+    "native"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js",
+      "require": "./dist/react/index.cjs"
+    },
+    "./native": {
+      "types": "./dist/native/index.d.ts",
+      "import": "./dist/native/index.js",
+      "require": "./dist/native/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "react-native": ">=0.72",
+    "react-native-gesture-handler": ">=2",
+    "react-native-reanimated": ">=3",
+    "react-native-svg": ">=13"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    },
+    "react-native-svg": {
+      "optional": true
+    },
+    "react-native-gesture-handler": {
+      "optional": true
+    },
+    "react-native-reanimated": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "d3-hierarchy": "^3.1.2"
+  },
+  "optionalDependencies": {
+    "react-zoom-pan-pinch": "^3.7.0"
+  },
+  "devDependencies": {
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "expo-print": "^13.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "^0.74.5",
+    "react-native-gesture-handler": "^2.32.0",
+    "react-native-reanimated": "^3.19.5",
+    "react-native-svg": "^15.15.5",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "keywords": [
+    "org-chart",
+    "org chart react",
+    "organization-chart",
+    "organizational-chart",
+    "react org chart",
+    "react-native org chart",
+    "company hierarchy",
+    "employee directory",
+    "team structure",
+    "reporting structure",
+    "react",
+    "react-native",
+    "tree",
+    "hierarchy",
+    "hierarchy-chart",
+    "visualization",
+    "typescript"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "core-innovate-tree-example-native",
+    "slug": "core-innovate-tree-example-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light"
+  }
+}
